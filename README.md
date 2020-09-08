@@ -7,7 +7,7 @@
 <h2>In case of any questions feel free to ask me!</h2>
 
 <div>
-<img src="weather_station.JPG" width="300" height="200" align="middle" hspace="5">
+<img src="weather_station.JPG" width="800" height="600" align="middle" hspace="5">
 <p></p>   
 
 </div>
