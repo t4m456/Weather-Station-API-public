@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Station</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<video autoplay muted loop id="myVideo">
+    <source src="./content/cloud.mp4" type="video/mp4">
+    </video>
+<body>
+  <div class="weather-box-wrapper">
+<!-- ------------------------ WEATHER BOX 1 ---------------------------------------------->
+    <div class="weather-box1">
+        <div>
+            <input type="text" class="search-box1" id="search-box1"><i class="fa fa-search search-icon1"></i>
+            <div><h3>City: <span class="data-decor" id="box1-city-name">--</span></h3>
+                <h3>Country: <span class="data-decor" id="box1-country">--</span></h3>
+                <h4>Latest server refresh: <span class="data-decor" id="box1-refresh-date">--</span></h4>
+            </div>
+
+
+        </div>
+        <h1>Temperature: <span class="data-decor" id="box1-temp">--</span><span class="data-decor">&#8451;</span></h1>
+        <h2>Humidity: <span class="data-decor" id="box1-humidity">--</span><span class="data-decor">%</span></h2>
+        <h2>Real feel: <span class="data-decor" id="box1-realfeel">--</span><span class="data-decor">&#8451;</span></h2>
+        <h3>Currently: <span class="data-decor" id="box1-description">--</span></h3>
+        <h2>Forecast <i class="fa fa-eye eye-icon1"></i></h2>
+        <div class="box1-forecast-box">
+            
+           <!-- <h3><span id="box1-forecast-date1">Datum</span> <span>Nap</span> <span>Hőfok:</span> <span>N/A &#8451;</span> <span>Előrejelzés</span></h3>
+            <h3><span>Datum</span> <span>Nap</span> <span>Hőfok:</span> <span>N/A &#8451;</span> <span>Előrejelzés</span></h3>
+            <h3><span>Datum</span> <span>Nap</span> <span>Hőfok:</span> <span>N/A &#8451;</span> <span>Előrejelzés</span></h3>
+            <h3><span>Datum</span> <span>Nap</span> <span>Hőfok:</span> <span>N/A &#8451;</span> <span>Előrejelzés</span></h3>
+            <h3><span>Datum</span> <span>Nap</span> <span>Hőfok:</span> <span>N/A &#8451;</span> <span>Előrejelzés</span></h3>
+        -->
+        </div>
+    
+    </div>
+<!-- ------------------------ WEATHER BOX 1 end---------------------------------------------->
+
+<!-- ------------------------ WEATHER BOX 2 ---------------------------------------------->
+    <div class="weather-box2">
+        <div>
+            <input class="search-box2" id="search-box2"><i class="fa fa-search search-icon2"></i>
+            <div><h3>City: <span class="data-decor" id="box2-city-name">--</span></h3>
+                <h3>Country: <span class="data-decor" id="box2-country">--</span></h3>
+                <h4>Latest server refresh: <span class="data-decor" id="box2-refresh-date">--</span></h4>
+            </div>
+
+
+        </div>
+        <h1>Temperature: <span class="data-decor" id="box2-temp">--</span><span class="data-decor">&#8451;</span></h1>
+        <h2>Humidity: <span class="data-decor" id="box2-humidity">--</span><span class="data-decor">%</span></h2>
+        <h2>Real feel: <span class="data-decor" id="box2-realfeel">--</span><span class="data-decor">&#8451;</span></h2>
+        <h3>Currently: <span class="data-decor" id="box2-description">--</span></h3>
+        <h2>Forecast <i class="fa fa-eye eye-icon2"></i></h2>
+        <div class="box2-forecast-box">
+            
+           <!-- <h3><span id="box1-forecast-date1">Datum</span> <span>Nap</span> <span>Hőfok:</span> <span>N/A &#8451;</span> <span>Előrejelzés</span></h3>
+            <h3><span>Datum</span> <span>Nap</span> <span>Hőfok:</span> <span>N/A &#8451;</span> <span>Előrejelzés</span></h3>
+            <h3><span>Datum</span> <span>Nap</span> <span>Hőfok:</span> <span>N/A &#8451;</span> <span>Előrejelzés</span></h3>
+            <h3><span>Datum</span> <span>Nap</span> <span>Hőfok:</span> <span>N/A &#8451;</span> <span>Előrejelzés</span></h3>
+            <h3><span>Datum</span> <span>Nap</span> <span>Hőfok:</span> <span>N/A &#8451;</span> <span>Előrejelzés</span></h3>
+        -->
+        </div>
+            
+           
+    </div>
+<!-- ------------------------ WEATHER BOX 2 end---------------------------------------------->
+
+<!-- ------------------------ WEATHER BOX 3 ---------------------------------------------->  
+    <div class="weather-box3">
+        <div>
+            <input class="search-box3" id="search-box3"><i class="fa fa-search search-icon3"></i>
+            <div><h3>City: <span class="data-decor" id="box3-city-name">--</span></h3>
+                <h3>Country: <span class="data-decor" id="box3-country">--</span></h3>
+                <h4>Latest server refresh: <span class="data-decor" id="box3-refresh-date">--</span></h4>
+            </div>
+
+
+        </div>
+        <h1>Temperature: <span class="data-decor" id="box3-temp">--</span><span class="data-decor">&#8451;</span></h1>
+        <h2>Humidity: <span class="data-decor" id="box3-humidity">--</span><span class="data-decor">%</span></h2>
+        <h2>Real feel: <span class="data-decor" id="box3-realfeel">--</span><span class="data-decor">&#8451;</span></h2>
+        <h3>Currently: <span class="data-decor" id="box3-description">--</span></h3>
+        <h2>Forecast <i class="fa fa-eye eye-icon3"></i></h2>
+        <div class="box3-forecast-box">
+            
+           <!-- <h3><span id="box1-forecast-date1">Datum</span> <span>Nap</span> <span>Hőfok:</span> <span>N/A &#8451;</span> <span>Előrejelzés</span></h3>
+            <h3><span>Datum</span> <span>Nap</span> <span>Hőfok:</span> <span>N/A &#8451;</span> <span>Előrejelzés</span></h3>
+            <h3><span>Datum</span> <span>Nap</span> <span>Hőfok:</span> <span>N/A &#8451;</span> <span>Előrejelzés</span></h3>
+            <h3><span>Datum</span> <span>Nap</span> <span>Hőfok:</span> <span>N/A &#8451;</span> <span>Előrejelzés</span></h3>
+            <h3><span>Datum</span> <span>Nap</span> <span>Hőfok:</span> <span>N/A &#8451;</span> <span>Előrejelzés</span></h3>
+        -->
+        </div>
+    </div>
+<!-- ------------------------ WEATHER BOX 3 end---------------------------------------------->
+
+  </div>
+
+    <script src="weatherAppEn.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

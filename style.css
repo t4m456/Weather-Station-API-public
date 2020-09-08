@@ -1,0 +1,341 @@
+:root {
+  /*--primaryColor: rgb(54, 124, 255);*/
+  --primaryColor: rgb(140, 200, 224);
+  --secondaryColor: #1C4580;
+  --decorColor: #fcd292;
+  --mainWhite: #FFFFFF;
+  --mainBlack: #222222;
+  
+  }
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+  body{
+      width: 100%;
+      display: grid;
+    margin:0 auto;
+    
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    
+
+ }
+ 
+  .main-container{
+    display: grid;
+    position: relative;
+    
+    align-self: center;
+    min-width: 300px;
+    max-width:400px;
+    min-height: 300px;
+    text-align:center;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+  
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  margin: 0 auto;
+  grid-template-columns: auto;
+  grid-gap: 10px;
+  padding: 0;
+  /*width: auto;*/
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: -1px 4px 10px -6px rgba(255, 255, 255, 0.5);
+ font-size: 1.2rem;
+   /*box-shadow: 3px 3px 3px -3px rgba(255, 255, 255, 0.2);*/
+  }
+  #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  .make-inline{
+    display: inline;
+   /* background-color: black;*/
+  }
+  .first-button{
+    display: grid;
+    position: relative;
+    justify-content: center;
+  align-items: center;
+  align-self: center;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  margin-top: 5em;
+  border-radius: 10px;
+  box-shadow: -1px 4px 10px -6px rgba(255, 255, 255, 0.5);
+  border: 2px solid black;
+  padding: 2px;
+  
+  }
+  
+
+  .first-button:hover{
+
+    cursor: pointer;
+    
+    animation: firstButton 0.5s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+  }  
+
+  @keyframes firstButton{
+
+    100% {
+
+        color: red;
+        border: 2px solid red;
+    }
+  }
+  
+.first-button-anchor{
+    text-decoration: none;
+    color: #f1f1f1;
+
+}
+.first-button-anchor:hover{
+
+    animation: firstButtonAnchor 0.5s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+}
+@keyframes firstButtonAnchor{
+
+    100% {
+
+        color: red;
+        
+    }
+  }
+
+  .en{
+    color: red;
+  }
+  .hu{
+    color: #FFFFFF;
+  }
+  .check {
+    position: relative;
+    width: 50px;
+  }
+  .check:before{
+    content:'';
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    background: #FFFFFF;
+    border-radius: 25px;
+  }
+  .check:checked:before{
+    background: red;
+  }
+  .check:after{
+    content:'';
+    position: absolute;
+    left: 0px;
+    width: 25px;
+    height: 25px;
+    background: black;
+    border-radius: 25px;
+    transition: 0.25s;
+    border: 2px solid red;
+    box-sizing: border-box;
+  }
+  .check:checked:after{
+    left: 25px;
+    border: 2px solid #FFFFFF;
+  }
+  .no-display {
+    display: none;
+  }
+  /*------------------------HERE STARTS THE WEATHERSTATION HTML------------------*/
+  /*-----------------------------------------------------------------------------*/
+  .data-decor{
+
+    color: var(--decorColor);
+  }
+  .search-box1 {
+    
+    min-width: 100px;
+    max-width: 250px;
+      height: 2.2rem;
+    font-size: 1.5rem;
+    font-weight: normal;
+    border-radius: 10px;
+    /*opacity: 0.7;*/
+  
+  }
+  .search-box2 {
+    
+    min-width: 100px;
+    max-width: 250px;
+      height: 2.2rem;
+    font-size: 1.5rem;
+    font-weight: normal;
+    border-radius: 10px;
+    /*opacity: 0.7;*/
+  
+  }
+  .search-box3 {
+    
+    min-width: 100px;
+    max-width: 250px;
+      height: 2.2rem;
+    font-size: 1.5rem;
+    font-weight: normal;
+    border-radius: 10px;
+    /*opacity: 0.7;*/
+  
+  }
+  .search-icon1{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 5px;
+    color: var(--primaryColor);
+  }
+  .search-icon1:hover{
+    cursor: pointer;
+    color: red;
+    transition: 0.25s;
+  }
+
+  .search-icon2{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 5px;
+    color: var(--primaryColor);
+  }
+  .search-icon2:hover{
+    cursor: pointer;
+    color: red;
+    transition: 0.25s;
+  }
+
+  .search-icon3{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 5px;
+    color: var(--primaryColor);
+  }
+  .search-icon3:hover{
+    cursor: pointer;
+    color: red;
+    transition: 0.25s;
+  }
+
+  .eye-icon1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 5px;
+    color: var(--primaryColor);
+
+  }
+  .eye-icon1:hover {
+    cursor: pointer;
+    color: red;
+    transition: 0.25s;
+
+  }
+  .eye-icon2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 5px;
+    color: var(--primaryColor);
+
+  }
+  .eye-icon2:hover {
+    cursor: pointer;
+    color: red;
+    transition: 0.25s;
+
+  }
+  .eye-icon3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 5px;
+    color: var(--primaryColor);
+
+  }
+  .eye-icon3:hover {
+    cursor: pointer;
+    color: red;
+    transition: 0.25s;
+
+  }
+
+  .weather-box-wrapper{
+    position: relative;
+    display: grid;
+    justify-content: center;
+  align-items: center;
+  align-self: center;
+  margin: 0 auto;
+  
+  /*background-color: salmon;*/
+  width: 100vw;
+  height: auto;
+
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-column-gap: 0rem;
+  grid-row-gap: 0rem;
+  }
+
+
+  .weather-box1 {
+    
+    display: grid;
+    grid-row-gap: 0rem;
+    min-width: 300px;
+    min-height: 600px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    border-radius: 10px;
+  box-shadow: -1px 4px 10px -6px rgba(255, 255, 255, 0.5);
+ font-size: 0.5rem;
+ padding-left: 5px;
+ margin-left: 5px;
+ margin-right:5px;
+ margin-top: 5px;
+  }
+  .weather-box2 {
+    
+    display: grid;
+    grid-row-gap: 0rem;
+    min-width: 300px;
+    min-height: 600px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    border-radius: 10px;
+  box-shadow: -1px 4px 10px -6px rgba(255, 255, 255, 0.5);
+ font-size: 0.5rem;
+ padding-left: 5px;
+ margin-left: 5px;
+ margin-right:5px;
+ margin-top: 5px;
+  }
+  .weather-box3 {
+    
+    display: grid;
+    grid-row-gap: 0rem;
+    min-width: 300px;
+    min-height: 600px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    border-radius: 10px;
+  box-shadow: -1px 4px 10px -6px rgba(255, 255, 255, 0.5);
+ font-size: 0.5rem;
+ padding-left: 5px;
+ margin-left: 5px;
+ margin-right:5px;
+ margin-top: 5px;
+  }
